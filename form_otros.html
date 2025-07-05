@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Crear Publicación</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <nav class="nav-tabs">
+    <a href="home.html" class="tab">Inicio</a>
+    <a href="form_usuarios.html" class="tab">Gestión Usuarios</a>
+    <a href="form_otros.html" class="tab active">Publicaciones</a>
+  </nav>
+
+  <h1>Crear Publicación</h1>
+
+  <form id="formPublicacion" class="form-grid">
+    <label>Título*:
+      <input type="text" id="titulo">
+    </label>
+
+    <label>Contenido*:
+      <textarea id="contenido" rows="5"></textarea>
+    </label>
+
+    <div class="form-buttons">
+      <button type="submit">Guardar</button>
+      <button type="button" id="cancelarPublicacion">Cancelar</button>
+    </div>
+  </form>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
