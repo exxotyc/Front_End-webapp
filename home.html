@@ -1,0 +1,40 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Inicio - Visualización de Datos</title>
+  <link rel="stylesheet" href="https://cdn.datatables.net/v/dt/dt-2.3.2/datatables.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav class="nav-tabs">
+    <a href="home.html" class="tab active">Inicio</a>
+    <a href="form_usuarios.html" class="tab">Gestión Usuarios</a>
+    <a href="form_otros.html" class="tab">Publicaciones</a>
+  </nav>
+
+  <h1>Visualización de Datos</h1>
+
+  <div class="selector-datos">
+    <label for="selector">Seleccionar tipo de datos:</label>
+    <select id="selector">
+      <option value="users">Usuarios</option>
+      <option value="posts">Publicaciones</option>
+      <option value="todos">Tareas</option>
+    </select>
+    <button id="cargarDatos">Cargar Datos</button>
+  </div>
+
+  <div class="tabla-contenedor">
+    <table id="tablaDatos" class="display" style="width:100%">
+      <thead></thead>
+      <tbody></tbody>
+    </table>
+  </div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://cdn.datatables.net/v/dt/dt-2.3.2/datatables.min.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>
